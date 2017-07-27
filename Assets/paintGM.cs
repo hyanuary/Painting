@@ -76,16 +76,12 @@ public class paintGM : MonoBehaviour {
             else
             {
                 lastMousePos = new Vector2(-1f, -1f);
-                text2d.Apply();
+                //text2d.Apply();
             }
-        
-        
-	}
 
-    void DrawPainting(Vector2 position)
-    {
         
     }
+
 
     void DrawCircle (int cx, int cy, int rad, Color col)
     {
