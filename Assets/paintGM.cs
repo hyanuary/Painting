@@ -7,7 +7,8 @@ public class paintGM : MonoBehaviour {
     public Transform baseDot;
     public KeyCode mouseLeft;
     public static string toolType;
-    public static float currentScale = 0.05f;
+    public static Color currentColor;
+    public static float currentScale = 0.01f;
 
     public Texture2D text2d;
 
@@ -18,6 +19,7 @@ public class paintGM : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        currentColor = Color.black;
         lastMousePos = new Vector2(-1f, -1f);
         text2d = new Texture2D(512, 512);
 	}
